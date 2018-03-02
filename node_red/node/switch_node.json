@@ -1,0 +1,1 @@
+[{"id":"ee65844.fb52d78","type":"rpi-gpio in","z":"c797c48b.b6b498","name":"タクトスイッチ","pin":"7","intype":"tri","debounce":"25","read":false,"x":734.75,"y":293.75,"wires":[[]]},{"id":"2a373534.f6fafa","type":"comment","z":"c797c48b.b6b498","name":"タクトスイッチ用GPIOノード","info":"","x":737,"y":245.75,"wires":[]}]

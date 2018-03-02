@@ -19,18 +19,17 @@
   
 ## Content  
 
-* [基板構成と主要部品名称](./constitution/README.md)
+* [基板構成と主要部品名称](./constitution/)
   * 基板構成
   * GPIO 40PN コネクタ
   * I2C 8PIN スルーホール
   * 赤外線受光部
   * インジケーターLED  
   * タクトスイッチ  
-  * 基板寸法
   
-* [RASPBIANをインストールする](./install/README.md)
+* [RASPBIANをインストールする](./install/)
   
-* [セットアップ](./setup/README.md)
+* [セットアップ](./setup/)
   * 接続方法
     * GPIO 40PINを使った接続方法
     * USBを使った接続方法
@@ -41,6 +40,8 @@
     * GPIO 40PINで接続する場合
     * USB接続の場合  
   
-* [Python サンプルプログラム](./python/README.md)  
+* [Python サンプルプログラム](./python/)  
+* [Node-RED サンプルプログラム](./node_red/)  
+
   
 ---

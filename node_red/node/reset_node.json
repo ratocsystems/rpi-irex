@@ -1,0 +1,1 @@
+[{"id":"dd77b9d0.4296d","type":"comment","z":"c797c48b.b6b498","name":"リセット用GPIOノード","info":"","x":520,"y":255.75,"wires":[]},{"id":"6b88cb99.47348c","type":"rpi-gpio out","z":"c797c48b.b6b498","name":"リセット","pin":"15","set":true,"level":"1","freq":"","out":"out","x":500.75,"y":298.75,"wires":[]}]  
