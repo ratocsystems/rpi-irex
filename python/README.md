@@ -55,12 +55,12 @@ $ cd RPi-IREX
 GitHubからPythonサンプルファイルをダウンロードします。
 1. irexIn.pyをダウンロード
 ```
-$ wget https://github.com/ratocsystems/rpi-irex/blob/master/python/irexIn.py  
+$ wget https://github.com/ratocsystems/rpi-irex/raw/master/python/irexIn.py  
 ```  
 
 2. irexOut.pyをダウンロード
 ```
-$ wget https://github.com/ratocsystems/rpi-irex/blob/master/python/irexOut.py  
+$ wget https://github.com/ratocsystems/rpi-irex/raw/master/python/irexOut.py  
 ```  
 
 3. 'ls'コマンドを実行してPythonサンプルファイル(irexIn.py, irexOut.py)がダウンロードされていることを確認します。
