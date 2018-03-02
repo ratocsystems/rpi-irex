@@ -84,9 +84,9 @@ Welcome to Node-RED
 ***
 ## Node-REDでの制御方法  
 RPi-IREXを制御するためのノードについて説明します。  
-各ノードのJSONデータを記載していますので、Node-REDに読み込ませることで使用することができます。  
+各ノードのJSONデータを記載していますので、Node-REDに読み込ませることで使用することができます。  
   
-### ノードの読み込み方法  
+### ノードの読み込み方法  
   
 1. 各ノードの説明にある下記のようなJSONデータを全てコピーします　　
   
@@ -103,16 +103,16 @@ RPi-IREXを制御するためのノードについて説明します。
 4. ノードが表示されますので、適当な場所に配置してください  
   ![sample_node](./img/sample_node.png)  
   
-5. ノードの追加・変更・移動などを行なった場合は、`デプロイ`を実行してください。  
+5. ノードの追加・変更・移動などを行なった場合は、`デプロイ`を実行してください。  
   ブラウザのNode-RED画面の右上にある`デプロイ`ボタンをクリックすることで実行できます。  
   `デプロイ`が赤色の場合は、`デプロイ`を実行してください。  
-  ![deploy_red](./img/deploy_red.png)  
+  ![deploy_red](./img/deploy_red.png)  
   `デプロイ`が灰色の場合は、`デプロイ`の必要はありません。  
-  ![deploy_grey](./img/deploy_grey.png)  
+  ![deploy_grey](./img/deploy_grey.png)  
     
 ### 各ノードの説明  
 - **UART(GPIO40pin接続)制御用シリアルノード**  
-  GPIO40pin接続時にUARTで制御するためのノードです。  
+  GPIO40pin接続時にUARTで制御するためのノードです。  
   コマンドを出力する時に出力用ノード、コマンドを受信する時に入力用ノードを使用します。  
   ![uart_node](./img/uart_node.png)  
   
@@ -120,14 +120,14 @@ RPi-IREXを制御するためのノードについて説明します。
   [{"id":"b1b66241.b32468","type":"serial in","z":"c797c48b.b6b498","name":"UART用入力ノード","serial":"d542a3c0.25fef8","x":301.75,"y":154.75,"wires":[[]]},{"id":"41941b8f.de4924","type":"serial out","z":"c797c48b.b6b498","name":"UART用出力ノード","serial":"d542a3c0.25fef8","x":301.75,"y":195.75,"wires":[]},{"id":"a73cf35e.59c4d","type":"comment","z":"c797c48b.b6b498","name":"UART制御用シリアルノード","info":"","x":303,"y":114.25,"wires":[]},{"id":"d542a3c0.25fef8","type":"serial-port","z":"","serialport":"/dev/ttyS0","serialbaud":"115200","databits":"8","parity":"none","stopbits":"1","newline":"100","bin":"bin","out":"time","addchar":false}]
   ```  
     
-  RPi-IREXの制御ができないときは、制御用のデバイスファイルを確認してください。  
-  サンプル`UART制御用シリアルノード`は`/dev/ttyS0`が設定されていますので、変更する場合は`UART制御用シリアルノード`をダブルクリックして変更してください。  
+  RPi-IREXの制御ができないときは、制御用のデバイスファイルを確認してください。  
+  サンプル`UART制御用シリアルノード`は`/dev/ttyS0`が設定されていますので、変更する場合は`UART制御用シリアルノード`をダブルクリックして変更してください。  
   ![uart_setting](./img/uart_setting.png)  
   ![uart_node_setting1](./img/uart_node_setting1.png)  
   ![uart_node_setting2](./img/uart_node_setting2.png)  
     
 - **USB制御用シリアルノード**  
-  USB接続時に制御するためのノードです。  
+  USB接続時に制御するためのノードです。  
   コマンドを出力する時に出力用ノード、コマンドを受信する時に入力用ノードを使用します。  
   ![usb_node](./img/usb_node.png)  
   
@@ -135,8 +135,8 @@ RPi-IREXを制御するためのノードについて説明します。
   [{"id":"3f56a550.6ea2f2","type":"serial out","z":"c797c48b.b6b498","name":"USB用出力ノード","serial":"bcfe1fa8.0daa6","x":289.75,"y":393.75,"wires":[]},{"id":"d0a5affc.619d9","type":"serial in","z":"c797c48b.b6b498","name":"USB用入力ノード","serial":"bcfe1fa8.0daa6","x":287.75,"y":350.75,"wires":[[]]},{"id":"3bd1cc86.8a517c","type":"comment","z":"c797c48b.b6b498","name":"USB制御用シリアルノード","info":"","x":288.75,"y":310.75,"wires":[]},{"id":"bcfe1fa8.0daa6","type":"serial-port","z":"","serialport":"/dev/ttyACM0","serialbaud":"57600","databits":"8","parity":"none","stopbits":"1","newline":"100","bin":"bin","out":"time","addchar":false}]  
   ```  
     
-  RPi-IREXの制御ができないときは、制御用のデバイスファイルを確認してください。  
-  サンプル`USB制御用シリアルノード`は`/dev/ttyACM0`が設定されていますので、変更する場合は`USB制御用シリアルノード`をダブルクリックして変更してください。  
+  RPi-IREXの制御ができないときは、制御用のデバイスファイルを確認してください。  
+  サンプル`USB制御用シリアルノード`は`/dev/ttyACM0`が設定されていますので、変更する場合は`USB制御用シリアルノード`をダブルクリックして変更してください。  
   ![usb_setting](./img/usb_setting.png)  
   ![usb_node_setting1](./img/usb_node_setting1.png)  
   ![usb_node_setting2](./img/usb_node_setting2.png)  
@@ -144,9 +144,9 @@ RPi-IREXを制御するためのノードについて説明します。
 
     
 - **LED用GPIOノード**(GPIO40pin接続のみ)  
-  LED3を制御するためのノードです。  
+  LED3を制御するためのノードです。  
   LED3は2色(赤と緑)に点灯しますので、ノードが2種類あります。  
-  ノードに`1`を入力することで点灯、`0`を入力することで消灯します。  
+  ノードに`1`を入力することで点灯、`0`を入力することで消灯します。  
  ![led_node](./img/led_node.png)   
   
   ```  
@@ -155,7 +155,7 @@ RPi-IREXを制御するためのノードについて説明します。
      
 - **タクトスイッチ用GPIOノード**(GPIO40pin接続のみ)  
   タクトスイッチの状態を判定するためのノードです。  
-  スイッチを押した時は`0`、離した時は`1`になります。  
+  スイッチを押した時は`0`、離した時は`1`になります。  
   ![switch_node](./img/switch_node.png)  
   
   ```  
@@ -163,7 +163,7 @@ RPi-IREXを制御するためのノードについて説明します。
   ```  
     
 - **リセット用GPIOノード**(GPIO40pin接続のみ)  
-  RPi-IREXにハードウェアリセットをかけるためのノードです。  
+  RPi-IREXにハードウェアリセットをかけるためのノードです。  
   ノードに入力される信号が`0`の時にリセットがかかり、`1`になった時にリセットが解除されます。  
   ![reset_node](./img/reset_node.png)  
   
@@ -179,9 +179,9 @@ RPi-IREXを制御するためのノードについて説明します。
   [{"id":"194e9c9e.410b5b","type":"function","z":"c797c48b.b6b498","name":"コマンド送信","func":"//// CRCテーブル\nvar CRC8Table = [\n    0x00, 0x85, 0x8F, 0x0A, 0x9B, 0x1E, 0x14, 0x91,\n    0xB3, 0x36, 0x3C, 0xB9, 0x28, 0xAD, 0xA7, 0x22,\n    0xE3, 0x66, 0x6C, 0xE9, 0x78, 0xFD, 0xF7, 0x72,\n    0x50, 0xD5, 0xDF, 0x5A, 0xCB, 0x4E, 0x44, 0xC1,\n    0x43, 0xC6, 0xCC, 0x49, 0xD8, 0x5D, 0x57, 0xD2,\n    0xF0, 0x75, 0x7F, 0xFA, 0x6B, 0xEE, 0xE4, 0x61,\n    0xA0, 0x25, 0x2F, 0xAA, 0x3B, 0xBE, 0xB4, 0x31,\n    0x13, 0x96, 0x9C, 0x19, 0x88, 0x0D, 0x07, 0x82,\n    \n    0x86, 0x03, 0x09, 0x8C, 0x1D, 0x98, 0x92, 0x17,\n    0x35, 0xB0, 0xBA, 0x3F, 0xAE, 0x2B, 0x21, 0xA4,\n    0x65, 0xE0, 0xEA, 0x6F, 0xFE, 0x7B, 0x71, 0xF4,\n    0xD6, 0x53, 0x59, 0xDC, 0x4D, 0xC8, 0xC2, 0x47,\n    0xC5, 0x40, 0x4A, 0xCF, 0x5E, 0xDB, 0xD1, 0x54,\n    0x76, 0xF3, 0xF9, 0x7C, 0xED, 0x68, 0x62, 0xE7,\n    0x26, 0xA3, 0xA9, 0x2C, 0xBD, 0x38, 0x32, 0xB7,\n    0x95, 0x10, 0x1A, 0x9F, 0x0E, 0x8B, 0x81, 0x04,\n    \n    0x89, 0x0C, 0x06, 0x83, 0x12, 0x97, 0x9D, 0x18,\n    0x3A, 0xBF, 0xB5, 0x30, 0xA1, 0x24, 0x2E, 0xAB,\n    0x6A, 0xEF, 0xE5, 0x60, 0xF1, 0x74, 0x7E, 0xFB,\n    0xD9, 0x5C, 0x56, 0xD3, 0x42, 0xC7, 0xCD, 0x48,\n    0xCA, 0x4F, 0x45, 0xC0, 0x51, 0xD4, 0xDE, 0x5B,\n    0x79, 0xFC, 0xF6, 0x73, 0xE2, 0x67, 0x6D, 0xE8,\n    0x29, 0xAC, 0xA6, 0x23, 0xB2, 0x37, 0x3D, 0xB8,\n    0x9A, 0x1F, 0x15, 0x90, 0x01, 0x84, 0x8E, 0x0B,\n    \n    0x0F, 0x8A, 0x80, 0x05, 0x94, 0x11, 0x1B, 0x9E,\n    0xBC, 0x39, 0x33, 0xB6, 0x27, 0xA2, 0xA8, 0x2D,\n    0xEC, 0x69, 0x63, 0xE6, 0x77, 0xF2, 0xF8, 0x7D,\n    0x5F, 0xDA, 0xD0, 0x55, 0xC4, 0x41, 0x4B, 0xCE,\n    0x4C, 0xC9, 0xC3, 0x46, 0xD7, 0x52, 0x58, 0xDD,\n    0xFF, 0x7A, 0x70, 0xF5, 0x64, 0xE1, 0xEB, 0x6E,\n    0xAF, 0x2A, 0x20, 0xA5, 0x34, 0xB1, 0xBB, 0x3E,\n    0x1C, 0x99, 0x93, 0x16, 0x87, 0x02, 0x08, 0x8D\n];\n\n//// CRCを計算します\nfunction CRC8(byte_array, buf_length) {\n  var crc = 0\n\n  for (var i = 0; i < buf_length; i++ ) \n    crc = CRC8Table[(crc ^ byte_array[i]) % 256] \n\n  return crc;\n} \n\n\n//////////////////////////////////////////////\n// 送信コマンドを通信データフォーマットに変換します \n//////////////////////////////////////////////\nvar command = [];   // 通信フォーマットデータ格納用\nvar data_buf = msg.payload; // コマンドデータ\nvar length = msg.payload.length;    // コマンドデータ長\n\n// コマンドデータのCRCを計算\nmsg.crc = CRC8(data_buf, length);   \n\n// 通信フォーマットデータ作成\ncommand[0] = 0x7E;      // SYNコード(固定)  \ncommand[1] = 0xAA;      // ヘッダー(固定)\n\nvar j=0;\n\n// ペイロードバイト数(HiByte)\nvar len_hi = ((length >> 8) & 0xFF);  \nif((len_hi == 0x7D) || (len_hi == 0x7E))    // SYN(0x7E)またはESC(0x7D)がある場合\n{\n    command[2] = 0x7D;                      // 0x7D(ESC)を追加して\n    j++;\n    command[2+j] = (len_hi ^ 0x20);         // 0x20で排他的論理和する\n}\nelse\n{\n    command[2] = len_hi;                    // そのまま追加 \n}\nj++;\n\n// ペイロードバイト数(LoByte)\nvar len_lo = (length & 0xFF);  \nif((len_lo == 0x7D) || (len_lo == 0x7E))    //SYN(0x7E)またはESC(0x7D)がある場合\n{\n    command[2+j] = 0x7D;                    // 0x7D(ESC)を追加して\n    j++;\n    command[2+j] = (len_lo ^ 0x20);         // 0x20で排他的論理和する\n}\nelse\n{\n    command[2+j] = len_lo;                  // そのまま追加 \n}\nj++;\n\n\n// コマンドデータをペイロードに代入\nfor(var i=0; i<length; i++)\n{\n    if((data_buf[i] == 0x7D) || data_buf[i] == 0x7E)    //SYN(0x7E)またはESC(0x7D)がある場合\n    {\n        command[2+j] = 0x7D;                            // 0x7D(ESC)を追加して\n        j++;\n        command[2+j] = (data_buf[i] ^ 0x20);            // 0x20で排他的論理和する\n    }\n    else\n    {\n        command[2+j] = data_buf[i];                     // そのまま追加 \n    }\n    j++;\n}\n\n// CRC追加\nif((msg.crc == 0x7D) || (msg.crc == 0x7E))  //SYN(0x7E)またはESC(0x7D)がある場合\n{\n    command[2+j] = 0x7D;                    // 0x7D(ESC)を追加して\n    j++;\n    command[2+j] = msg.crc ^ 0x20;          // 0x20で排他的論理和する\n}\nelse\n{\n    command[2+j] = msg.crc;                 // そのまま追加     \n}\nj++;\n\ncommand[2+j] = 0x7E;  // SYNコード(固定)\n\nmsg.payload  = new Buffer(command);\n\nreturn msg;\n\n\n\n","outputs":1,"noerr":0,"x":707.1428833007812,"y":2146.78564453125,"wires":[[]]},{"id":"9a463369.20f1e8","type":"comment","z":"c797c48b.b6b498","name":"コマンド送信ファンクションノード","info":"","x":704.2857666015625,"y":2101.428497314453,"wires":[]}]  
   ```  
   
-  - **赤外線信号送出コマンドノード**  
+  - **赤外線信号送出コマンドノード**  
   保存した赤外線信号を送出するコマンドです。  
-  JSONで保存された赤外線信号ファイルをJSONノードで変換し、ペイロードを生成します。  
+  JSONで保存された赤外線信号ファイルをJSONノードで変換し、ペイロードを生成します。  
   赤外線信号ファイルは、Pythonサンプルファイルで保存したファイルと互換性があります。  
   ![irOutput_node](./img/irOutput_node.png)  
   
@@ -206,8 +206,8 @@ RPi-IREXを制御するためのノードについて説明します。
   ```  
     
 - **コマンド判定スイッチノード**  
-  どのコマンドに対する受信コマンドか判定します。  
-  赤外線信号送出・赤外線信号学習・赤外線信号学習中断・ファームウェアバージョン取得コマンドと不明なコマンドに対するそれぞれの処理をするために使用します。 
+  どのコマンドに対する受信コマンドか判定します。  
+  赤外線信号送出・赤外線信号学習・赤外線信号学習中断・ファームウェアバージョン取得コマンドと不明なコマンドに対するそれぞれの処理をするために使用します。 
   各コマンドの出力ポートは、上から順に赤外線信号送出・赤外線信号学習・赤外線信号学習中断・ファームウェアバージョン取得コマンド・不明なコマンドになっています。  
   ![commandSwitch_node](./img/commandSwitch_node.png)  
   
@@ -238,8 +238,8 @@ RPi-IREXを制御するためのノードについて説明します。
 - **赤外線信号ファイルノード**  
   赤外線信号データ用のファイルノードです。  
   学習した赤外線信号を保存するファイルを指定します。  
-  希望の赤外線信号を保存したファイルを選んで赤外線信号を送出することができます。
-  Pythonサンプルファイルで使用する赤外線信号ファイルと互換性がありますので、共通ファイルとして使用できます。  
+  希望の赤外線信号を保存したファイルを選んで赤外線信号を送出することができます。
+  Pythonサンプルファイルで使用する赤外線信号ファイルと互換性がありますので、共通ファイルとして使用できます。  
   ![dataFile_node](./img/dataFile_node.png)  
   
   ```  
@@ -254,7 +254,7 @@ RPi-IREXを制御するためのノードについて説明します。
 ***
 ## Node組み合せ例  
 ### スイッチ・LED(GPIO40pin接続のみ)    
-  タクトスイッチノードとLEDノードを組み合わせて、スイッチとLEDを連携させます。  
+  タクトスイッチノードとLEDノードを組み合わせて、スイッチとLEDを連携させます。  
   タクトスイッチが押すと緑LEDが点灯します。
   タクトスイッチを離すと赤LEDが点灯します。  
   ![switchLed_node](./img/switchLed_node.png)  
@@ -276,7 +276,7 @@ RPi-IREXを制御するためのノードについて説明します。
   
 ### ファームウェアバージョン取得  
   ファームウェアのバージョンを取得するノードの組み合わせです。  
-  USB接続の場合は、`UART制御用シリアルノード`を`USB制御用シリアルノード`に変更してください。  
+  USB接続の場合は、`UART制御用シリアルノード`を`USB制御用シリアルノード`に変更してください。  
   ![getVersion_node](./img/getVersion_node.png)  
     
   ```  
@@ -286,13 +286,13 @@ RPi-IREXを制御するためのノードについて説明します。
   取得したファームウェアバージョンを確認するために、`debugノード`を使用しています。  
   デバッグを表示させるためには、ブラウザのNode-RED画面の右上にある`デバッグタブ`を選んでください。  
   ![debugTab](./img/debugTab.png)  
-  ファームウェアバージョン取得コマンドを送信するきっかけに`injectノード`を使用しています。  
+  ファームウェアバージョン取得コマンドを送信するきっかけに`injectノード`を使用しています。  
   `injectノード`の左にあるボタンをクリックすると、ファームウェアバージョン取得コマンドを送信されます。
   ![debugTab](./img/inject_node.png)  
     
   
 ### 赤外線リモコン信号学習  
-  赤外線リモコンの信号を学習し、ファイルに保存するノードの組み合わせです。  
+  赤外線リモコンの信号を学習し、ファイルに保存するノードの組み合わせです。  
   `injectノード`をクリックすると赤外線信号学習モードになり、LED2が赤色に点灯します。  
   15秒以内に赤外線受光部にリモコンを向けて、保存したい信号を出力してください。  
   学習が終了するとLED2が消灯して、`赤外線信号ファイルノード`で指定されたファイルに保存されます。  
@@ -325,13 +325,13 @@ RPi-IREXを制御するためのノードについて説明します。
 `赤外線信号ファイルノード`に接続された`injectノード`の設定のタイミングで赤外線信号が出力されます。  
 `injectノード`をダブルクリックすると下記のような設定ができます。
 ![timer_setting](./img/timer_setting.png)  
-`繰り返し`のメニューで**指定した時間間隔・指定した時間間隔、日時・指定した日時**を設定できます。  
+`繰り返し`のメニューで**指定した時間間隔・指定した時間間隔、日時・指定した日時**を設定できます。  
 ![timer_setting2](./img/timer_setting2.png)  
-平日の7時に実行する設定や1時間毎に実行する設定は下記の通りです。  
+平日の7時に実行する設定や1時間毎に実行する設定は下記の通りです。  
 名前をつけることでタイマーの内容をわかりやすくすることができます。
 ![am7](./img/am7.png)  
 ![60min](./img/60min.png)  
-`赤外線信号ファイルノード`も名前をつけることができますので、赤外線信号の名前をつけることでわかりやすくなります。  
+`赤外線信号ファイルノード`も名前をつけることができますので、赤外線信号の名前をつけることでわかりやすくなります。  
 ![on](./img/on.png)  
 ![timer_node2](./img/timer_node2.png)  
   
