@@ -1,0 +1,29 @@
+{
+    "bridge": {
+        "name": "RPi-IREX Homebridge",
+        "username": "00:00:00:00:00:00",
+        "port": 51826,
+        "pin": "031-45-156"
+    },
+
+    "description": "RPi-IREX",
+
+    "platforms": [],
+
+    "accessories": [
+        {
+            "accessory": "CMD",
+            "name": "テレビ",
+            "on_cmd": "python3 /home/pi/RPi-IREX/irexOut.py -d /dev/ttyS0 -f /home/pi/RPi-IREX/tvON.json",
+            "off_cmd": "python3 /home/pi/RPi-IREX/irexOut.py -d /dev/ttyS0 -f /home/pi/RPi-IREX/tvON.json"
+        },
+
+        {
+            "accessory": "CMD",
+            "name": "照明",
+            "on_cmd": "python3 /home/pi/RPi-IREX/irexOut.py -d /dev/ttyS0 -f /home/pi/RPi-IREX/lightON.json",
+            "off_cmd": "python3 /home/pi/RPi-IREX/irexOut.py -d /dev/ttyS0 -f /home/pi/RPi-IREX/lightOFF.json"
+        }
+
+    ]
+}
