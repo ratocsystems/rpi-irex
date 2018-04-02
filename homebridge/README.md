@@ -16,9 +16,9 @@ Raspberry Piは`Raspberry Pi3 ModelB`、OSは`Raspbian Stretch with desktop(NOOB
 ***
   
 ### Homebridgeのインストール  
-下記ページを参照して、Homebridgeをインストールしてください。  
-https://github.com/nfarina/homebridge  
-https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi  
+> 下記ページを参考に、Homebridgeの設定を行います。  
+> https://github.com/nfarina/homebridge  
+> https://github.com/nfarina/homebridge/wiki/Running-HomeBridge-on-a-Raspberry-Pi  
   
 
 1. <u>Node.jsアップデート</u>  
@@ -124,13 +124,15 @@ a) 以下のコマンドを実行し、config.jsonファイルを開きます。
         `irexOut.py`の場所と赤外線信号ファイルの場所を含めたコマンドを設定します。  
 
         例）`irexOut.py`と赤外線信号ファイル`tvON.json`が`/home.pi/RPi-IREX`フォルダにある場合  
-```
+        ```
         "python3 /home/pi/RPi-IREX/irexOut.py -d /dev/ttyS0 -f /home/pi/RPi-IREX/tvON.json"
-```
+        ```  
+
       - "off_cmd":  
         "on_cmd"と同様に、機器をOFFにするコマンドを設定します。  
 
     d) 制御する機器を増やす場合は、下記のように追加します。  
+
     ```
     "accessories": [
         {
