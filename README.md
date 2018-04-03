@@ -27,7 +27,7 @@
   * インジケーターLED  
   * タクトスイッチ  
   
-* [RASPBIANをインストールする](./install/RASPBIAN_SETUP.md)
+* [RASPBIANをインストールする](./install/)
   
 * [セットアップ](./setup/README.md)
   * 接続方法
