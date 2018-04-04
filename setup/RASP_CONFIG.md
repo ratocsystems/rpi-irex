@@ -127,7 +127,7 @@ GPIO 40PINで接続した場合は、ターミナルから以下の文字列を�
   
 `more /proc/device-tree/hat/product`  
 
-上記の文字を入力後エンターキーを押すことで、画面に **"Interfaced Renite Control Board RPi-IREX"** と表示されていれば、次に進みます。  
+上記の文字を入力後エンターキーを押すことで、画面に **"Infrared Remote Control Board RPi-IREX"** と表示されていれば、次に進みます。  
 
 次に以下の文字列を入力してください。  
   
